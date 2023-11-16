@@ -1,0 +1,58 @@
+<html>
+<head>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+<table border="1">
+<tr>
+<td>Northern Province</td>
+</tr>
+<tr>
+<td><a href="C:\Users\CRC\Desktop\abcdefg\jaffna.html">Jaffna</td>
+</tr>
+<tr>
+<td><a href="C:\Users\CRC\Desktop\abcdefg\kilinochchi.html">Kilinochchi</td>
+</tr>
+<tr>
+<td><a href="C:\Users\CRC\Desktop\abcdefg\Mannar.html">Mannar</td>
+</tr>
+<tr>
+<td><a href="C:\Users\CRC\Desktop\abcdefg\Mullaitivu.html">Mullaitivu</td>
+</tr>
+<tr>
+<td><a href="C:\Users\CRC\Desktop\abcdefg\Vavuniya.HTML">Vavuniya</td>
+</tr>
+</table>
+<button onclick="fillTable()">Fill Table Randomly</button>
+</div>
+
+<script>
+  function fillTable() {
+    var table = document.getElementById("myTable");
+
+    for (var i = 1, row; row = table.rows[i]; i++) {
+      for (var j = 1, col; col = row.cells[j]; j++) {
+        // Generate a random boolean value (true or false)
+        var randomBoolean = Math.random() < 0.5;
+
+        // Set the cell content to true or false
+        col.innerHTML = randomBoolean;
+      }
+    }
+  }
+</script>
+</body>	  
+</html>
+
